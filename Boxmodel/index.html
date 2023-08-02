@@ -23,7 +23,7 @@
         .secondbox{
             background-color: paleturquoise;
             border-style: dotted;
-            border-radius: 3px;
+            border-radius: 10px ;
             border-width: 3px;
             border-color: black;
         }
@@ -39,7 +39,41 @@
             border-width: 3px;
             border-color: black;
         }
+h3{
+    border-style: double;
+    border-color: rgb(18, 11, 1);
+    border-top-left-radius: 0%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 0%;
+    background-color: beige;
+    padding: 50px;
+    padding-left: 600px;
+    color: brown;
+    font-size: xx-large;
+}
+.mybutton{
+    color:black;
+    background-color: lightcoral;
+    border-style:solid;
+    border-radius: 50px;
+    font-size: x-large;
+    padding: 10px;
+    margin-left: 50%;
 
+}
+.mybutton:hover{
+    border-radius: 0 50%;
+    transform: translateX(10px) rotate(10deg) translateY(5px);;
+}
+.myimage{
+    padding-left: 50%;
+    margin-bottom: 300px;
+}
+.myimage:hover{
+    transform: rotate(180deg);
+transition: all 10s;
+}
     </style>
 </head>
 <body>
@@ -61,5 +95,10 @@
     <strong>Margin</strong>
     Clears an area outside the border. The margin is transparent
 </p></pre>
+<h3>Web development</h3>
+<button class="mybutton">Google</button>
+<br><br>
+<button class="mybutton">My Github Profile</button> <br><br><br>
+<img class="myimage" width="200px" src="/imagefolder.html/image.jpeg" >
 </body>
 </html>
