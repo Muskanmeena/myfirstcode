@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+       
+        
+        h1{
+            color:white;
+            text-align: center;
+          
+        }
+        div{
+            text-align:justify ;
+            font-size: x-large;
+                }
+                .button{
+                    color: black;
+                    background-color: beige;
+                    font-size: x-large;
+                }
+    </style>
+</head>
+<body style="background-color: lightblue;">
+  
+<h1> <u>Registration Form</u></h1>
+<div>
+    <form>
+        <label for="name3">First Name:</label>
+        <input type="text" placeholder="Enter your First Name" id="name3"><br><br>
+        <label for="name4">Middle Name:</label>
+        <input type="text" placeholder="Enter your Middle Name" id="name4"><br><br>
+        <label for="name5">Last Name:</label>
+        <input type="text" placeholder="Enter your Last Name" id="name5"><br><br>
+            <label for="name">Email:</label>
+        <input type="email" placeholder="type your email here" id="name" class="myemail"><br><br>
+        <label for="name2">Password:</label> 
+        <input type="password" placeholder="password" id="name2" name="password"><br><br>
+        <label for="name3"> Rewrite Password:</label> 
+        <input type="password" placeholder="Rewrite password" id="name3" name="password"><br><br>
+        <label for="birth">Date of Birth:</label>
+                     <input type="date" id="birth" ><br><br>
+                    
+                        <label for="Courses">Courses:</label>
+                        <select name="Courses" id="Courses">
+                            <option value="webd">Web Development</option>
+                            <option value="mobd">Mobile Development</option>
+                            <option value="appd">App Development</option>
+                            <option value="machined">Machine learning</option>
+                        </select><br><br>
+                        <fieldset>
+                        <legend>
+                            Gender:
+                        </legend>
+                        <label for="radio1">Male</label>
+                        <input type="radio" id="radio1" name="radio"><br>
+                        <label for="radio2">Female</label>
+                        <input type="radio" id="radio2" name="radio"><br>
+                        <label for="radio3">Others</label>
+                        <input type="radio" id="radio3" name="radio"><br>
+                        
+                     </fieldset><br>
+                     <label for="phone">Phone Number:</label>
+                     <input type="tel" id="phone" name="phone"><br><br>
+                     <label for="address">Address:</label><br>
+                     <textarea name="address" id="address" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="submit" class="button">
+    </form>
+</div>
+</body>
+</html>

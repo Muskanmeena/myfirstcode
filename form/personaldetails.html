@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details </title>
+    <style>
+
+.mybutton{
+    color: white;
+background-color: orange;
+border-style: solid;
+border-color: darkred;
+text-transform: uppercase;
+
+}
+.mybutton:hover{
+transform:scale(1.5);
+}
+.Personal{
+    text-align: justify;
+font-size: x-large;
+}
+h1{
+    color: red;
+}
+.educationqual{
+    color: red;
+}
+.address{
+    color: red;
+}
+    </style>
+</head>
+<body style="background-color: lightgreen;">
+    
+    <form>
+    <div class="Personal">
+    <h1>Personal Details</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="name" placeholder="Enter your Name"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" class="password" placeholder="Enter your Password"><br><br>
+    <label for="emailid">Email Id:</label>
+    <input type="email" id="emailid" class="emailid" placeholder="Enter your Email id"><br><br>
+    <fieldset>
+        <legend>Gender:</legend>
+        <label for="radio1">Male</label>
+        <input type="radio" name="radio" id="radio1"><br>
+        <label for="radio2">Female</label>
+        <input type="radio" name="radio" id="radio2"><br>
+        <label for="radio3">Others</label>
+        <input type="radio" name="radio" id="radio3"><br>
+    </fieldset>
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" name="mobile" id="mobile" placeholder="Enter your Mobile Number">
+  <fieldset>
+    <legend class="educationqual">Education Qualification:</legend>
+  <label for="degree">Degree:</label>
+  <select name="degree" id="degree">
+   <option value="Btech">Btech</option>
+   <option value="BA">BA</option>
+   <option value="BB">BB</option>
+   <option value="BFA">BFA</option>
+  </select><BR></BR>
+  <label for="engineering">Engineering:</label>
+  <select name="engineering" id="engineering">
+    <option value="ECE">ECE</option>
+    <option value="CS">CS</option>
+    <option value="EE">EE</option>
+    <option value="BCE">BCE</option>
+  </select>
+  </fieldset>
+  <fieldset>
+    <legend>Hobbies:</legend>
+  <label for="checkbox1">Reading</label>
+  <input type="checkbox" name="checkbox1" id="checkbox1"><br>
+  <label for="checkbox2">Writing</label>
+  <input type="checkbox" name="checkbox2" id="checkbox2"><br>
+  <label for="checkbox3">Music</label>
+  <input type="checkbox" name="checkbox3" id="checkbox3"><br>
+</fieldset><br>
+<label for="textarea1" class="address">
+Address:
+</label><br>
+<textarea name="textarea1" id="textarea1" cols="30" rows="10"></textarea><br><br>
+<label for="resume">Attach Resume:</label>
+<input type="file" id="resume" name="resume"><br>
+<button class="mybutton">Submit</button>
+</div>
+</form>
+</body>
+</html>
