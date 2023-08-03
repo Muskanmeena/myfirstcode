@@ -20,15 +20,17 @@
     <form>
         <div class="box">
         <label for="fullname">Full Name:</label><br>
-        <input type="text" name="fullname" id="fullname" ><br><br>
+        <input type="text" name="fullname" id="fullname" required><br><br>
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
+        <input type="email" id="email" name="email" required><br><br>
         <label for="Mobile">Mobile Number:</label><br>
-        <input type="tel" name="Mobile" id="Mobile"><br><br>
+        <input type="tel" name="Mobile" id="Mobile" required><br><br>
         <label for="fileupload">Resume:</label><br>
-        <input type="file" id="fileupload" name="fileupload"><br><br>
+        <input type="file" id="fileupload" name="fileupload" required><br><br>
         <label for="Number">Experience (years):</label><br>
-        <input type="number" name="Number" id="Number" min="0" max="25"> <br><br>
+        <input type="number" name="Number" id="Number" min="0" max="25" required> <br><br>
+        
+
         <fieldset>
             <legend>Skills:
             </legend>

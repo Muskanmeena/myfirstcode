@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient form</title>
+    <style>
+        h1{
+            font-size: xx-large;
+            text-align: center;
+            color:black;
+            background-color:lightblue;
+        }
+        .aa{
+            text-align: center;
+
+        }
+        .b{
+           margin-left: 45%;
+           border: solid;
+           border-color: blue;
+        }
+        .patient{
+            font-size: xx-large;
+            color: red;
+        }
+        .add{
+            font-size: xx-large;
+            color: red;
+        }
+        .case{
+            font-size: x-large;
+            color: blue;
+        }
+        .emergency{
+            font-size: xx-large;
+            color: red;
+        }
+        .Symp{
+            font-size: xx-large;
+            color: red;
+        }
+        .meds{
+            font-size: x-large;
+            color: blue;
+        }
+        .det{
+            background-color: lightcyan;
+        }
+        .ads{
+            background-color: lightcyan;
+        }
+.emer{
+    background-color: lightcyan;
+}
+.medsa{
+    background-color: lightcyan;
+}
+.hel{
+    background-color: lightcyan;
+}
+.sympt{
+    background-color: lightcyan;
+}
+    </style>
+</head>
+<body>
+    <form>
+    <h1>New Patient Enrollment</h1>
+    <p class="aa">Dr.Muskan Meena</p>
+    <img class="b"  src="https://tse4.mm.bing.net/th?id=OIP.gSaeh0JDdD1Gze_qGGPbggHaId&pid=Api&P=0&h=180" alt="doctor symbol"><br>
+    <fieldset class="det">
+        <legend class="patient">Patient Details:</legend>
+    <label for="name">Name:</label><br><br>
+     <label for="name1"> First Name</label>
+    <input type="text" id="name1" name="name1" required >
+    <label for="name2"  style="min-height:13px"> Middle Name</label>
+    <input type="text" id="name2" name="name2" >
+    <label for="name3">Last Name</label>
+    <input type="text" id="name3" name="name3" ><br><br>
+    <label for="dob">Date of Birth:</label><br><br>
+    <label for="month">Month</label>
+    <select name="month" id="month">
+        <option value=""></option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select>
+    <label for="day">Day</label>
+    <select>
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select>
+    <label for="year">Year</label>
+    <select name="year" id="year">
+        <option value=""></option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option>
+</select><br><br>
+<label for="Gender">Gender:</label>
+<select name="Gender" id="Gender">
+    <option value="Please select" >Please Select</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="N/A">N/A</option></select><br><br>
+    <label for="contact">Contact Number:</label>
+    <input type="tel" id="contact" name="contact"><br><br>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="mail" placeholder="ex: myname@example.com"><br><br>
+    <label for="marital">Marital Status:</label>
+    <select name="marital" id="marital">
+        <option value="Please Select">Please Select</option>
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Legallyseparated">Legally Separated</option>
+        <option value="Widowed">Widowed</option>
+    </select>
+    <br><br></fieldset>
+   <fieldset class="ads">
+    <legend class="add">Address:</legend>
+    <label for="streetaddress">Street Address</label>
+    <input type="text" id="streetaddress" name="streetaddress"><br><br>
+    <label for="streetaddress2">Street Address Line 2</label>
+    <input type="text" id="streetaddress2" name="streetaddress2"><br><br>
+    <label for="city">City</label>
+    <input type="text" id="city" name="city">
+    <label for="state">State/Province</label>
+    <input type="text" name="state" id="state"><br><br>
+    <label for="Postal">Postal/Zip Code</label>
+    <input type="text" name="Postal" id="Postal">
+   </fieldset><br><br>
+  <hr>
+<p class="case">In case of emergency</p>
+<br>
+<fieldset class="emer">
+    <legend class="emergency">Emergency Contact:</legend>
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname">
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname"><br><br>
+    <label for="relation">Relationship</label><br>
+    <input type="text" id="relation">
+    <br><br>
+    <label for="contact2">Contact Number</label><br>
+    <input type="text" id="contact2">
+</fieldset>
+<hr>
+<fieldset class="hel">
+<label for="weight">Weight(KG)</label>
+<input type="number" id="weight"><br><br>
+<label for="height">Height(Inches)</label>
+<input type="number" id="height"></fieldset><hr>
+
+    <fieldset class="sympt">
+        <legend class="Symp">Symptoms</legend>
+        <select name="Symptoms" id="Symptoms">
+            <option value="Please Select">Please Select</option>
+            <option value="Cough">Cough</option>
+            <option value="fever">fever</option>
+            <option value="sore">sore throat</option>
+            <option value="breath">shortness of breath</option>
+            <option value="nose">runny nose</option>
+            <option value="fatigue">fatigue</option>
+            <option value="taste">loss of smell/or taste</option>
+            <option value="other">other Symptoms</option>
+        </select>
+    </fieldset>
+   <fieldset class="medsa">
+<legend class="meds">Taking any medications,currently?</legend> 
+<label for="yes">YES</label>
+<input type="radio" name="radio" id="yes">
+<label for="no">NO</label>
+<input type="radio" name="radio" id="no"><br><br>
+<label for="explain">if yes,please list here</label><br><br>
+<textarea name="explain" id="explain" cols="30" rows="10"></textarea>
+</fieldset><br><br>
+<input type="reset" id="clear"> <br> <br>
+
+<a href="/form/next.html" target="_blank"><img src="https://thumbs.dreamstime.com/b/vector-illustration-enroll-now-green-button-web-icon-white-background-enroll-now-button-121749081.jpg" alt="enroll" width="250px"></a>
+
+</form>
+</body>
+</html>
