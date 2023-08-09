@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+<style>
+    .container{
+display: grid;
+grid-template-columns: 60px 60px 60px;
+column-gap: 50px;
+border-style: double;
+border-color: blue;
+    }
+    div{
+
+    }
+    #one{
+background-color: yellow;
+    }
+    #two{
+        background-color: violet;
+    }
+    #three{
+        background-color: red;
+    }
+    #four{
+        background-color: palevioletred;
+    }
+    #five{
+        background-color: brown;
+    }
+    .cont{
+display: grid;
+grid-template-rows: 100px auto 200px ;
+border: solid;
+border-color: black;
+row-gap: 50px;
+    }
+    
+    #a{
+        color: white;
+background-color: green;
+width: 100px;
+    }
+    #b{
+        color: white;
+        background-color: fuchsia;
+    }
+    #c{
+        color: white;
+        background-color:lightcoral;
+    }
+    #d{
+        color: white;
+        background-color:lightsalmon;
+    }
+    #e{
+        color: white;
+        background-color:black;
+    }
+    .contain{
+display: grid;
+border-style: solid;
+border-color: black;
+
+
+
+    }
+    
+    #g{
+        color: white;
+background-color: green;
+
+    }
+    #h{
+        color: white;
+        background-color: fuchsia;
+        grid-column: 1 / span 2;
+    }
+    #i{
+        color: white;
+        background-color:lightcoral;
+        grid-column: 1 / span 2;
+    }
+    #j{
+        color: white;
+        background-color:lightsalmon;
+    }
+    #k{
+        color: white;
+        background-color:black;
+    }
+</style>
+</head>
+<body>
+   <div class="container">
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <div id="four">4</div>
+    <div id="five">5</div>
+   </div> 
+   <div class="cont">
+    <div id="a">1</div>
+    <div id="b">2</div>
+    <div id="c">3</div>
+    <div id="d">4</div>
+    <div id="e">5</div>
+   </div> <br>
+   <div class="contain">
+    <div id="g">1</div>
+    <div id="h">2</div>
+    <div id="i">3</div>
+    <div id="j">4</div>
+    <div id="k">5</div>
+   </div> 
+</body>
+</html>

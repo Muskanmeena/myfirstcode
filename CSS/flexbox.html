@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            display: flex;
+           height: 700px;
+       
+        }
+        div{
+            text-align: center;
+            color:black;
+            font-size: xx-large;
+           
+        }
+        #one{
+            background-color: aqua;
+            align-self: center;
+            width: 400px;
+        }
+        #two{
+            background-color: blue;
+           width: 400px;
+           align-self: flex-end;
+        }
+        #three{
+            background-color:red;
+            width: 400px;
+            align-self: center;
+        }
+        #four{
+            background-color: green;
+            width: 400px;
+            align-self: baseline;
+        }
+        #five{
+            background-color:yellow;
+            width: 400px;
+            align-self: stretch;           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </div>
+</body>
+</html>
